@@ -1,38 +1,35 @@
-import React from 'react'
+import React from 'react';
 
 type MenuLogoProps = {
-  onClick(): void
-}
+  onClick(): void;
+};
 
 export const MenuLogo = ({ onClick }: MenuLogoProps) => {
   return (
     <svg
       onClick={onClick}
-      width="30"
-      height="30"
+      width="40"
+      height="40"
       viewBox="0 0 110 110"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ cursor: 'pointer' }}
     >
+      <circle cx="55" cy="55" r="55" fill="#5A7BFA" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M0 3.375C0 1.51104 1.51104 0 3.375 0H105.875C107.739 0 109.25 1.51104 109.25 3.375V94.95C109.25 96.814 107.739 98.325 105.875 98.325H3.375C1.51104 98.325 0 96.814 0 94.95V3.375ZM38.2375 16.3875C38.2375 19.4044 35.7919 21.85 32.775 21.85C29.7581 21.85 27.3125 19.4044 27.3125 16.3875C27.3125 13.3706 29.7581 10.925 32.775 10.925C35.7919 10.925 38.2375 13.3706 38.2375 16.3875ZM76.475 21.85C79.4919 21.85 81.9375 19.4044 81.9375 16.3875C81.9375 13.3706 79.4919 10.925 76.475 10.925C73.4581 10.925 71.0125 13.3706 71.0125 16.3875C71.0125 19.4044 73.4581 21.85 76.475 21.85Z"
-        fill="#FFC90C"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M35 35C35 32.2386 37.2386 30 40 30H70C72.7614 30 75 32.2386 75 35V75C75 77.7614 72.7614 80 70 80H40C37.2386 80 35 77.7614 35 75V35Z"
+        fill="white"
       />
-      <rect
-        y="27.3125"
-        width="109.25"
-        height="81.9375"
-        rx="3.375"
-        fill="#FFA947"
-      />
+      <circle cx="45" cy="45" r="5" fill="#5A7BFA" />
+      <circle cx="65" cy="45" r="5" fill="#5A7BFA" />
       <path
-        d="M38.2375 38.2375C44.1966 50.2938 62.0739 55.1163 71.0126 38.2375"
-        stroke="white"
-        stroke-width="1.125"
-        stroke-linecap="round"
+        d="M45 65C45 65 50 70 65 65"
+        stroke="#5A7BFA"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
-  )
-}
+  );
+};

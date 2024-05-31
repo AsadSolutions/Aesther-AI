@@ -46,7 +46,7 @@ const ProductTable = ({ id, products }: Props) => {
               description="Add products to your store and set them live to accept payments from
           customers."
               title="Add a product"
-              className="flex items-center gap-2 bg-orange px-4 py-2 text-black font-semibold rounded-lg text-sm"
+              className="flex items-center gap-2 bg-blue px-4 py-2 text-black font-semibold rounded-lg text-sm"
               trigger={
                 <>
                   <Plus
@@ -74,8 +74,8 @@ const ProductTable = ({ id, products }: Props) => {
                     alt="image"
                   />
                 </TableCell>
-                <TableCell>${product.name}</TableCell>
-                <TableCell>{product.price}</TableCell>
+                <TableCell>{product.name}</TableCell>
+                <TableCell>${product.price}</TableCell>
                 <TableCell className="text-right">
                   {product.createdAt.getDate()}{' '}
                   {getMonthName(product.createdAt.getMonth())}{' '}

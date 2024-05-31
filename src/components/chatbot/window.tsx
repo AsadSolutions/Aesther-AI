@@ -129,13 +129,13 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
               </div>
               <form
                 onSubmit={onChat}
-                className="flex px-3 py-1 flex-col flex-1 bg-porcelain"
+                className="flex px-3 py-1 flex-col flex-1 bg-white"
               >
                 <div className="flex justify-between">
                   <Input
                     {...register('content')}
                     placeholder="Type your message..."
-                    className="focus-visible:ring-0 flex-1 p-0 focus-visible:ring-offset-0 bg-porcelain rounded-none outline-none border-none"
+                    className="focus-visible:ring-0 flex-1 p-0 focus-visible:ring-offset-0 bg-white rounded-none outline-none border-none"
                   />
                   <Button
                     type="submit"

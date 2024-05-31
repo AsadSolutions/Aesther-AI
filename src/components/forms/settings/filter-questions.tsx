@@ -61,7 +61,7 @@ const FilterQuestions = ({ id }: Props) => {
           </div>
           <Button
             type="submit"
-            className="bg-orange hover:bg-orange hover:opacity-70 transition duration-150 ease-in-out text-white font-semibold"
+            className="bg-blue hover:bg-blue hover:opacity-70 transition duration-150 ease-in-out text-white font-semibold"
           >
             Create
           </Button>
