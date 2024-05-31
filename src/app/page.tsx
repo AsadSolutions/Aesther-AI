@@ -33,11 +33,11 @@ export default async function Home() {
       <NavBar />
       <section>
         <div className="flex items-center justify-center flex-col mt-[80px] gap-4 ">
-          <span className="text-orange bg-orange/20 px-4 py-2 rounded-full text-sm">
+          <span className="text-blue bg-blue/20 px-4 py-2 rounded-full text-sm">
             An AI powered sales assistant chatbot
           </span>
           <Image
-            src="/images/corinna-ai-logo.png"
+            src="/images/aesther-ai-logo.png"
             width={500}
             height={100}
             alt="Logo"
@@ -47,7 +47,7 @@ export default async function Home() {
             Your AI powered sales assistant! Embed Aether AI into any website
             with just a snippet of code!
           </p>
-          <Button className="bg-orange font-bold text-white px-4">
+          <Button className="bg-blue font-bold text-white px-4">
             Start For Free
           </Button>
           <Image
@@ -75,7 +75,7 @@ export default async function Home() {
             })}
           >
             <CardHeader>
-              <CardTitle className="text-orange">{card.title}</CardTitle>
+              <CardTitle className="text-blue">{card.title}</CardTitle>
               <CardDescription>
                 {pricingCards.find((c) => c.title === card.title)?.description}
               </CardDescription>
