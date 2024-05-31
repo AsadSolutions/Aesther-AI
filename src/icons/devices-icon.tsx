@@ -1,5 +1,5 @@
 import React from 'react'
-
+// thanks
 type Props = {}
 
 const DevicesIcon = (props: Props) => {
