@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Dialog,
   DialogContent,
@@ -6,18 +6,18 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog'
-import { ArrowBigLeftIcon, ArrowLeft, ArrowRight } from 'lucide-react'
-import Image from 'next/image'
+} from "@/components/ui/dialog";
+import { ArrowBigLeftIcon, ArrowLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 type Props = {
-  trigger: React.ReactNode
-  children: React.ReactNode
-  title: string
-  description: string
-  type?: 'Integration'
-  logo?: string
-}
+  trigger: React.ReactNode;
+  children: React.ReactNode;
+  title: string;
+  description: string;
+  type?: "Integration";
+  logo?: string;
+};
 
 const Modal = ({
   trigger,
@@ -28,7 +28,7 @@ const Modal = ({
   logo,
 }: Props) => {
   switch (type) {
-    case 'Integration':
+    case "Integration":
       return (
         <Dialog>
           <DialogTrigger asChild>{trigger}</DialogTrigger>
@@ -38,7 +38,7 @@ const Modal = ({
                 <Image
                   src={`https://ucarecdn.com/2c9bd4ab-1f00-41df-bad2-df668f65a232/`}
                   fill
-                  alt="Corinna"
+                  alt="Aesther"
                 />
               </div>
               <div className="text-gray-400">
@@ -62,7 +62,7 @@ const Modal = ({
             {children}
           </DialogContent>
         </Dialog>
-      )
+      );
     default:
       return (
         <Dialog>
@@ -75,8 +75,8 @@ const Modal = ({
             {children}
           </DialogContent>
         </Dialog>
-      )
+      );
   }
-}
+};
 
-export default Modal
+export default Modal;
